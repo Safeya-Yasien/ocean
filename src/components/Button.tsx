@@ -8,7 +8,6 @@ interface IButtonProps {
 
 const Button = ({
   variant = "primary",
-  isFullSize,
   children,
 }: IButtonProps) => {
   return (

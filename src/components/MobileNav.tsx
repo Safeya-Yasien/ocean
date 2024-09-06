@@ -18,12 +18,12 @@ const MobileNav = () => {
         className="flex md:hidden cursor-pointer md:cursor-none"
         onClick={toggleMenu}
       >
-        {isOpen ? <Menu /> : <X />}
+        {!isOpen ? <Menu /> : <X />}
       </div>
       <div
         className={`absolute bg-slate-800 rounded-md p-2 right-2 top-20 origin-top transition-all z-50  w-auto
         ${
-          !isOpen
+          isOpen
             ? "scale-y-100 opacity-100 visible"
             : "scale-y-50 opacity-0 hidden"
         }`}

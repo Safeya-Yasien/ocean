@@ -30,7 +30,7 @@ export interface ITestimonial {
   review: string;
 }
 
-export interface FooterColumn {
+export interface IFooterColumn {
   title: string;
   links: string[];
 }
